@@ -5,7 +5,7 @@ A **professional, interactive Streamlit dashboard** that combines:
 - 📈 Real Bitcoin market data analysis  
 - 📉 Mathematical price simulation using Geometric Brownian Motion (GBM)  
 - 🎨 Advanced UI design (Glassmorphism + Neon theme + Animated splash screen)  
-- ⚡ Interactive volatility modeling & comparison tools  
+- ⚡ Interactive volatility modeling & comparison tools
 
 ---
 
