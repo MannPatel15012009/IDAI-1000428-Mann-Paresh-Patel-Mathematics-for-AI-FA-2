@@ -9,7 +9,7 @@ A **professional, interactive Streamlit dashboard** that combines:
 
 ---
 
-##🚀 Project Overview
+## 🚀 Project Overview
 
 **Crypto Volatility Visualizer** is a financial analytics application that merges:
 
