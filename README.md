@@ -9,7 +9,7 @@ A **professional, interactive Streamlit dashboard** that combines:
 
 ---
 
-## 🚀 Project Overview
+##🚀 Project Overview
 
 **Crypto Volatility Visualizer** is a financial analytics application that merges:
 
@@ -27,15 +27,15 @@ Built using:
 - <a href="https://pypi.org/project/yfinance/" target="_blank">yFinance</a>  
 
 ---
-# 🧩 Project Storyboard
+## 🧩 Project Storyboard
 
 Below is the original design storyboard for the application:
 <img width="1036" height="580" alt="Screenshot 2026-03-04 162747" src="https://github.com/user-attachments/assets/c03b938e-ce0a-4e18-b2bf-928e6d953c6d" />
 
 
-# 📌 Features
+## 📌 Features
 
-## 🎬 1. Cinematic Splash Screen
+### 🎬 1. Cinematic Splash Screen
 - Neon financial theme
 - Animated gradient glow
 - Professional dashboard introduction
@@ -43,19 +43,19 @@ Below is the original design storyboard for the application:
 
 ---
 
-## 🎨 2. Advanced UI Design
+### 🎨 2. Advanced UI Design
 
-### ✔ Glassmorphism Theme
+#### ✔ Glassmorphism Theme
 - Blurred panels
 - Gradient background
 - Soft neon glow
 - Modern fintech aesthetic
 
-### ✔ Animated Particles Background
+#### ✔ Animated Particles Background
 - Interactive JavaScript particle system
 - Subtle moving grid for financial theme
 
-### ✔ Styled Sidebar Controls
+#### ✔ Styled Sidebar Controls
 - Custom toggles
 - Custom sliders
 - Neon buttons
@@ -63,28 +63,30 @@ Below is the original design storyboard for the application:
 
 ---
 
-# 📊 Real Market Analysis (Tab 1)
+## 📊 Real Market Analysis (Tab 1)
 
 Uses live data from Yahoo Finance:
 
 ```python
 yf.download("BTC-USD", period="5y", interval="1d")
 ```
-Includes:
-📈 1. Bitcoin Close Price
+### Includes:
+
+#### 📈 1. Bitcoin Close Price
 
 Interactive time-series line chart
 
-📊 2. Volume Analysis
+#### 📊 2. Volume Analysis
 
 Daily trading volume bar chart
 
-📉 3. Rolling Volatility Index
+#### 📉 3. Rolling Volatility Index
+
 10-period rolling standard deviation of returns:
 ``` python
 Volatility = pct_change().rolling(10).std()
 ```
-📊 4. Technical Indicators (If CSV Uploaded)
+#### 📊 4. Technical Indicators (If CSV Uploaded)
 
 MA50 (50-day moving average)
 
@@ -92,8 +94,8 @@ MA200 (200-day moving average)
 
 RSI (14-period Relative Strength Index)
 
-📈 Mathematical Simulation (Tab 2)
-Geometric Brownian Motion (GBM)
+## 📈 Mathematical Simulation (Tab 2)
+### Geometric Brownian Motion (GBM)
 
 Implements stochastic differential equation:
 
@@ -113,14 +115,14 @@ Where:
 
 Z = Random normal shock
 
-🎛 Simulation Controls
-Market Mode
+### 🎛 Simulation Controls
+#### Market Mode
 
 Bull Market → μ = 0.25
 
 Bear Market → μ = -0.15
 
-Adjustable Parameters
+#### Adjustable Parameters
 
 Volatility (σ)
 
@@ -134,9 +136,9 @@ Amplitude
 
 Frequency
 
-Pattern Type
+### Pattern Type
 
-🔁 Comparison Mode
+#### 🔁 Comparison Mode
 
 Toggle option:
 
@@ -144,8 +146,8 @@ Switches to high vs low volatility comparison page
 
 Enables scenario-based analysis
 
-📂 Dataset Options
-Option 1 — Auto Fetch (Default)
+## 📂 Dataset Options
+### Option 1 — Auto Fetch (Default)
 
 Fetches BTC data using `yfinance`
 
@@ -153,7 +155,7 @@ Last 5 years daily data
 
 Cached using `@st.cache_data`
 
-Option 2 — Upload CSV
+### Option 2 — Upload CSV
 
 Upload Kaggle Bitcoin dataset:
 
@@ -171,7 +173,7 @@ RSI
 
 Volatility metrics
 
-🧠 Core Function
+## 🧠 Core Function
 ```python
 def gbm_simulation(S0, mu, sigma, T=1, steps=252):
     dt = T / steps
@@ -184,13 +186,13 @@ def gbm_simulation(S0, mu, sigma, T=1, steps=252):
 
     return prices
 ```
-🛠 Installation
-1️⃣ Clone Repository
+## 🛠 Installation
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/your-username/crypto-volatility-visualizer.git
 cd crypto-volatility-visualizer
 ```
-2️⃣ Install Required Dependencies
+### 2️⃣ Install Required Dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -198,11 +200,11 @@ Or manually:
 ```bash
 pip install streamlit pandas numpy plotly yfinance
 ```
-3️⃣ Run the Application
+### 3️⃣ Run the Application
 ```bash
 streamlit run app.py
 ```
-📦 Requirements.txt
+## 📦 Requirements.txt
 ```txt
 streamlit
 pandas
@@ -210,7 +212,7 @@ numpy
 plotly
 yfinance
 ```
-📐 Mathematical Concepts Used
+## 📐 Mathematical Concepts Used
 
 Stochastic Processes
 
@@ -224,7 +226,7 @@ Technical Analysis Indicators
 
 Time Series Simulation
 
-🖥 Architecture Overview
+## 🖥 Architecture Overview
 Streamlit Frontend
         ↓
 Sidebar Controls
@@ -238,7 +240,7 @@ Simulation Engine (GBM Model)
 Plotly Visualization Layer
 🎓 Academic Context
 
-Designed for:
+## Designed for:
 Mathematics for AI-II
 
 Financial Modeling
@@ -247,7 +249,7 @@ Volatility Simulation
 
 Market Behavior Analysis
 
-⚡ Performance Optimizations
+## ⚡ Performance Optimizations
 
 `@st.cache_data` for dataset caching
 
@@ -257,7 +259,7 @@ Efficient NumPy-based GBM simulation
 
 Session-state splash screen control
 
-📊 Example Use Cases
+## 📊 Example Use Cases
 
 Understanding crypto volatility
 
@@ -269,7 +271,7 @@ Teaching financial mathematics
 
 AI-based market modeling experiments
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Monte Carlo multiple path simulation
 
@@ -283,11 +285,11 @@ Live WebSocket crypto feed
 
 AI-based volatility prediction model
 
-📜 License
+## 📜 License
 
 This project is built for educational and academic purposes.
 
-👨‍💻 Authors
+## 👨‍💻 Authors
 
 Mann Paresh Patel- WACP Candidate Registration Number- 1000428
 
@@ -295,9 +297,9 @@ Jashith Hemendra Rathod- WACP Candidate Registration Number- 1000422
 
 Nishtha Priyesh Shah- WACP Candidate Registration Number- 1000436
 
-⭐ If You Like This Project
+## ⭐ If You Like This Project
 
-Consider:
+### Consider:
 
 Starring the repository
 
@@ -305,4 +307,4 @@ Forking for improvements
 
 Adding advanced financial metrics
 
-Crypto Volatility Visualizer — Where Mathematics Meets Market Chaos 📈
+### Crypto Volatility Visualizer — Where Mathematics Meets Market Chaos 📈
