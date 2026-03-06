@@ -15,7 +15,7 @@
 - **CRS Name:** Artificial Intelligence  
 - **Course Name:** Maths for A.I. 
 - **School Name:** Aspee Nutan Academy
-- **Live Link:** https://volatix-ai-ko7es7v6u8tu8xh5sfzzej.streamlit.app/
+- **Live Link:** https://idai-1000428-mann-paresh-patel-mathematics-for-ai-fa-2-zuugmtq.streamlit.app/Stable_Volatile_Comparison
 -**Course:** Mathematics for AI-II  
 -**Assessment:** Formative Assessment-2 (FA-2)  
 -**Marks:** 20  
