@@ -6,8 +6,22 @@ import plotly.graph_objects as go
 from datetime import datetime
 import time
 import streamlit.components.v1 as components
+
+
+import streamlit as st
 import yfinance as yf
 import pandas as pd
+
+
+
+
+
+
+
+
+
+import streamlit as st
+import time
 
 if "page" not in st.session_state:
     st.session_state.page = "splash"
