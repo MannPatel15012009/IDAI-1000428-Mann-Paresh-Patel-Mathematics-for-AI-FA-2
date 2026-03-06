@@ -62,7 +62,7 @@ Built using:
 ## 🧩 Project Storyboard
 
 Below is the original design storyboard for the application:
-<img width="1054" height="220" alt="image" src="https://github.com/user-attachments/assets/0a4893cc-2b16-48c9-bc9a-07e1508ff01f" />
+<img width="1920" height="1080" alt="Screenshot (185)" src="https://github.com/user-attachments/assets/a6236a6a-b23f-43df-bf58-66963fa8ad60" />
 
 
 # 📊 Features
