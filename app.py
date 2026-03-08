@@ -1216,8 +1216,10 @@ if st.session_state.page == "dashboard":
     
     
     # ===== METRIC CARDS SECTION =====
-    
-    latest_price = df["Close"].iloc[-1]
+    if not df.empty:
+      latest_price = df["Close"].iloc[-1]
+    else:
+      st.error("No data available for the selected filters.")
     prev_price = df["Close"].iloc[-2]
     price_change = ((latest_price - prev_price) / prev_price) * 100
     avg_volume = df["Volume"].mean()
