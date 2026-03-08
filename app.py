@@ -1215,17 +1215,27 @@ if st.session_state.page == "dashboard":
     
     
     
-    # ===== METRIC CARDS SECTION =====
-  if len(df) >= 2:
+# ===== METRIC CARDS SECTION =====
+
+if df.empty:
+    st.error("No data available for the selected filters.")
+
+elif len(df) < 2:
+    st.warning("Not enough data to calculate price change.")
+
+    latest_price = df["Close"].iloc[-1]
+    prev_price = latest_price
+    price_change = 0
+    avg_volume = df["Volume"].mean()
+    volatility = 0
+
+else:
     latest_price = df["Close"].iloc[-1]
     prev_price = df["Close"].iloc[-2]
-  else:
-    st.warning("Not enough data to calculate price change.")
-    prev_price = df["Close"].iloc[-2]
+
     price_change = ((latest_price - prev_price) / prev_price) * 100
     avg_volume = df["Volume"].mean()
     volatility = df["Close"].pct_change().std() * 100
-    
     # Risk Classification
     if volatility < 2:
         risk_level = "Low Risk"
